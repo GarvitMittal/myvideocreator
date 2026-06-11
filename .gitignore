@@ -1,0 +1,28 @@
+# Root-level assets (original, unoptimized)
+/Assets/
+
+# Build & dependencies
+node_modules/
+dist/
+build/
+.env
+.env.local
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Other
+.claude/
+.planning/
+.data/
+services/
