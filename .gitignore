@@ -1,7 +1,20 @@
-# Root-level assets (original, unoptimized)
-/Assets/
+# ── Ignore everything in Assets/ by default ──
+/Assets/*
 
-# Build & dependencies
+# ── …but keep the 4 files the landing page actually uses ──
+!/Assets/logo-trimmed.png
+!/Assets/MyVC logo round Black bg.png
+!/Assets/demo3.mp4
+!/Assets/Screenshot of UI.png
+
+# Heavy source video (17MB) and unused logo variants stay out automatically.
+
+# ── Project / engine code (not part of the landing page) ──
+services/
+.planning/
+.data/
+
+# ── Build & dependencies ──
 node_modules/
 dist/
 build/
@@ -9,20 +22,12 @@ build/
 .env.local
 *.log
 
-# System
+# ── System / IDE ──
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
 *~
-
-# IDE
 .vscode/
 .idea/
-*.sublime-workspace
-
-# Other
 .claude/
-.planning/
-.data/
-services/
